@@ -1,6 +1,11 @@
 # octopus-jsr375
 Integration between Octopus and Java EE Security API (Java EE8)
 
+# DEPRECATION NOTICE
+
+Proper Java EE Security API (JSR375) support is now available as Octopus module.
+See [here](https://bitbucket.org/contribute-group/javaeesecurityfirst/issues/81/support-for-identitystore-of-java-ee)
+
 ## modules
 
 # jsr375
@@ -15,7 +20,7 @@ A modified version of the starter EE 7 application of Octopus that uses the *Ide
 
 The code is tested on Payara (Glassfish) server but should run on any compliant Java EE 7 server.
 
-The example uses the *@EmbeddedIdentityStoreDefinition* ( see *be.rubus.octopus.jsr375.demo.AppAuthentication* ) but any other of the IdentityStore definition can be used. 
+The example uses the *@EmbeddedIdentityStoreDefinition* ( see *be.rubus.octopus.jsr375.demo.AppAuthentication* ) but any other of the IdentityStore definition can be used.
 
 The web application contains an unsecure index.xhtml page and a secured page which required authentication (and shows the other roles/groups the principal has)
 
